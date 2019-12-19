@@ -1,0 +1,487 @@
+ * Serving Flask app "flask_app.py" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:82/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 245-948-501
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 161-544-482
+Debugging middleware caught exception in streamed response at a point where response headers were already sent.
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/werkzeug/wsgi.py", line 506, in __next__
+    return self._next()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/werkzeug/wrappers/base_response.py", line 45, in _iter_encoded
+    for item in iterable:
+TypeError: 'Response' object is not iterable
+216.52.21.11 - - [19/Dec/2019 01:34:09] "POST / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:34:29] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 161-568-181
+216.52.21.11 - - [19/Dec/2019 01:36:33] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 10, in convertJson
+    j = json.loads(request.data.decode('utf-8'))
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 236-899-799
+216.52.21.11 - - [19/Dec/2019 01:40:20] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 234-694-537
+216.52.21.11 - - [19/Dec/2019 01:44:16] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 18, in convertJson
+    return render_template('json.html')
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: json.html
+216.52.21.11 - - [19/Dec/2019 01:44:17] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:17] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:17] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:17] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:17] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:17] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 365-459-142
+216.52.21.11 - - [19/Dec/2019 01:44:50] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 18, in convertJson
+    return render_template('./json.html')
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ./json.html
+216.52.21.11 - - [19/Dec/2019 01:44:50] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:50] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:50] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:51] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:51] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:44:51] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:45:38] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:46:24] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.data.decode('utf-8'))
+  File "/usr/lib/python3.6/ast.py", line 48, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/usr/lib/python3.6/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+File "<unknown>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+216.52.21.11 - - [19/Dec/2019 01:46:24] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:46:24] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:46:24] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:46:24] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:46:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:46:25] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 313-740-996
+216.52.21.11 - - [19/Dec/2019 01:50:06] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:50:42] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:51:12] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:51:31] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:06] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:23] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.form['dictionaryString'].decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+216.52.21.11 - - [19/Dec/2019 01:52:23] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:24] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:24] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:24] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 229-242-032
+216.52.21.11 - - [19/Dec/2019 01:52:44] "POST / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 01:52:44] "GET /favicon.ico HTTP/1.1" 404 -
+216.52.21.203 - - [19/Dec/2019 01:54:06] "GET / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 01:54:07] "GET /favicon.ico HTTP/1.1" 404 -
+216.52.21.203 - - [19/Dec/2019 01:54:11] "POST / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 01:54:11] "GET /favicon.ico HTTP/1.1" 404 -
+54.152.71.47 - - [19/Dec/2019 01:54:26] "GET / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 01:54:55] "POST / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 01:58:50] "GET / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 01:58:53] "POST / HTTP/1.1" 200 -
+104.52.238.149 - - [19/Dec/2019 02:00:02] "GET / HTTP/1.1" 200 -
+104.52.238.149 - - [19/Dec/2019 02:00:02] "GET /favicon.ico HTTP/1.1" 404 -
+104.52.238.149 - - [19/Dec/2019 02:00:04] "POST / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:01:47] "GET / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:01:54] "POST / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:00] "GET / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:03] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.form['dictionaryString'])
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7f8ea1b52940>
+216.52.21.203 - - [19/Dec/2019 02:02:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:03] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:04] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:02:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:04:07] "GET / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:04:19] "POST / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:04:33] "POST / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:04:57] "POST / HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:03] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.form['dictionaryString'])
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7f8ea1136c88>
+216.52.21.11 - - [19/Dec/2019 02:05:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:03] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:04] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:05:21] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-567-757
+216.52.21.203 - - [19/Dec/2019 02:05:57] "GET / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:00] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.form['dictionaryString']).replace("null","'null'")
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7f45e01b84e0>
+216.52.21.203 - - [19/Dec/2019 02:06:01] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:01] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:01] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:01] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:01] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:09] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.form['dictionaryString']).replace("null","'null'")
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7f45da7835c0>
+216.52.21.203 - - [19/Dec/2019 02:06:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:10] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:10] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:06:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:06:46] "POST / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joeytyndale/projects/jsonParser/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joeytyndale/projects/jsonParser/flask_app.py", line 11, in convertJson
+    j = ast.literal_eval(request.form['dictionaryString']).replace("null","'null'")
+  File "/usr/lib/python3.6/ast.py", line 85, in literal_eval
+    return _convert(node_or_string)
+  File "/usr/lib/python3.6/ast.py", line 66, in _convert
+    in zip(node.keys, node.values))
+  File "/usr/lib/python3.6/ast.py", line 65, in <genexpr>
+    return dict((_convert(k), _convert(v)) for k, v
+  File "/usr/lib/python3.6/ast.py", line 84, in _convert
+    raise ValueError('malformed node or string: ' + repr(node))
+ValueError: malformed node or string: <_ast.Name object at 0x7f45da625d30>
+216.52.21.11 - - [19/Dec/2019 02:06:46] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:06:47] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:06:47] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:06:47] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:06:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+216.52.21.11 - - [19/Dec/2019 02:06:48] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 345-645-291
+216.52.21.11 - - [19/Dec/2019 02:07:23] "POST / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:07:27] "GET /favicon.ico HTTP/1.1" 404 -
+216.52.21.203 - - [19/Dec/2019 02:07:29] "POST / HTTP/1.1" 200 -
+216.52.21.203 - - [19/Dec/2019 02:07:29] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in '/home/joeytyndale/projects/jsonParser/flask_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-219-272
